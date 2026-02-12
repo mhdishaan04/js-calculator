@@ -6,30 +6,37 @@
     </head>
 
     <body>
-        <input class="disp" type="number " disabled>
-        <p></p>
-        <button class="but" onclick="update(this)">1</button>
-        <button class="but" onclick="update(this)">2</button>
-        <button class="but" onclick="update(this)">3</button>
-        <button class="op-but" onclick="update(this)">+</button>
-        <p></p>
-        <button class="but" onclick="update(this)">4</button>
-        <button class="but" onclick="update(this)">5</button>
-        <button class="but" onclick="update(this)">6</button>
-        <button class="op-but" onclick="update(this)">-</button>
-        <p></p>
-        <button class="but" onclick="update(this)">7</button>
-        <button class="but" onclick="update(this)">8</button>
-        <button class="but" onclick="update(this)">9</button>
-        <button class="op-but" onclick="update(this)">*</button>
-        <p></p>
-        <button class="but" onclick="display.value='';">CLEAR</button>
-        <button class="but" onclick="update(this)">0</button>
-        <button class="but" onclick="update(this)">.</button>
-        <button class="op-but" onclick="update(this)">/</button>
-        <button class="but" onclick="calculate()">=</button>
 
-        <script>
+    <div class="disp-body">
+        <input class="disp" type="number " disabled>
+    </div>
+   <div class="inline-grid">
+    <div class="buttons-grid">
+        <button class="number-but" onclick="update(this)">1</button>
+        <button class="number-but" onclick="update(this)">2</button>
+        <button class="number-but" onclick="update(this)">3</button>
+        <button class="number-but" onclick="update(this)">4</button>
+        <button class="number-but" onclick="update(this)">5</button>
+        <button class="number-but" onclick="update(this)">6</button>
+        <button class="number-but" onclick="update(this)">7</button>
+        <button class="number-but" onclick="update(this)">8</button>
+        <button class="number-but" onclick="update(this)">9</button>
+        <button class="number-but" onclick="update(this)">0</button>
+        <button class="number-but" onclick="update(this)">.</button>
+        <button class="op-but" onclick="calculate()">=</button>
+    </div>
+    <div class="operator-buttons">
+            <button class="op-but" onclick="update(this)">+</button>
+            <button class="op-but" onclick="update(this)">-</button>
+            <button class="op-but" onclick="update(this)">*</button>            
+            <button class="op-but" onclick="update(this)">/</button>
+            <button class="op-but" onclick="display.value=''" style="background-color: white;">CLEAR</button>
+            <button class="op-but" onclick="update(this)">(</button>    
+            <button class="op-but" onclick="update(this)">)</button>
+        </div>
+</div> 
+    
+    <script>
             const display = document.querySelector('.disp');
 
             function update(value){
@@ -40,9 +47,10 @@
             function calculate(){
                 let vals=eval(display.value);
                 display.value=vals;
+
             }
 
-        </script>
+    </script>
 
     </body>
 </html>

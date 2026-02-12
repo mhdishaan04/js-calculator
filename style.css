@@ -1,60 +1,71 @@
-.disp{
-                width: 420px;
-                height: 50px;
-                font-size: 30px;
-                margin: 10px;
-                text-align: right;
-                border-radius: 100px;
-                background-color: white;
+body {
+    background-color: #000000;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    height: auto;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 70px;
 }
 
-.but{
-                width: 100px;
-                height: 50px;
-                font-size: 20px;
-                font-weight: bold;
-                margin: 10px;
-                background-color:rgb(255, 255, 255);
-                border-radius: 300px;
+.disp-body{
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #141414;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.disp{
+    font-size: 1.5rem;
+    color: black;
+    text-align: right;
+    border-radius: 20px;
+    background-color: #747474;
+}
+.number-but:active {
+    background: #777474;
+}
+
+.inline-grid{
+    border:2px solid rgb(75, 71, 71);
+    display: grid;
+    border-radius: 0 0 50px 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons-grid{
+    margin-left: 70px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    /*border: 3px solid rgb(0, 0, 0);*/
+    padding: 30px;
+
+}
+
+.number-but{
+    background-color: #141414;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    min-height: 40px;
+    min-width: 40px;
 }
 
 .op-but{
     background-color: orange;
-    width: 100px;
-    height: 50px;
-    border-radius: 300px;
-    font-size: 1.2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    font-weight: 1000;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bolder;
+    max-width: 70px;
 }
 
-.calculator{
-    text-align: center;
-    min-width: 500px;
-    border-color: black;
-    
-}
-
-body{
-    background-color:rgb(74, 70, 70);
-}
-
-.disp{
-                width: 420px;
-                height: 50px;
-                font-size: 30px;
-                margin: 10px;
-                text-align: right;
-                border-radius: 100px;
-}
-
-.but{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px;
-    background-color:darkgrey;
-    border-radius: 300px;
+.operator-buttons{
+    padding: 20px;
+    display: grid;
+    gap: 5px;
 }

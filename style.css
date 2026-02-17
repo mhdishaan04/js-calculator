@@ -1,14 +1,11 @@
 body {
     background-color: #000000;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    height: auto;
     max-width: 500px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 70px;
+    width: 90%;
+    max-width: 500px;
+    margin: 60px auto;  
+    padding: 30px;
 }
 
 .disp-body{
@@ -16,6 +13,7 @@ body {
     border: 3px solid rgb(0, 0, 0);
     background-color: #141414;
     border-radius: 50px 50px 0px 0px;
+    border:2px solid #777474;
 }
 
 .disp{
@@ -23,7 +21,7 @@ body {
     color: black;
     text-align: right;
     border-radius: 20px;
-    background-color: #747474;
+    background-color: #bcb2b2;
 }
 .number-but:active {
     background: #777474;
@@ -31,7 +29,7 @@ body {
 
 .inline-grid{
     border:2px solid rgb(75, 71, 71);
-    display: grid;
+    display: flex;
     border-radius: 0 0 50px 50px;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -41,7 +39,6 @@ body {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    /*border: 3px solid rgb(0, 0, 0);*/
     padding: 30px;
 
 }
